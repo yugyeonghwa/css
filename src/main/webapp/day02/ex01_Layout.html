@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+article {
+	border: 1px solid red;
+}
+
+ul li {
+	border: 1px solid blue;
+}
+
+ul, ol {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.wrap {
+	width: 800px;
+	margin: 100px auto;
+	border: 5px solid black;
+}
+
+.wrap .left {
+	width: 400px;
+	height: 400px;
+	background-color: pink;
+	float: left;
+}
+
+.wrap .right {
+	width: 400px;
+	height: 400px;
+	background-color: lightblue;
+	float: left;
+}
+
+/* 가상요소 : float 해제 : 선택한 요소의 끝부분에 생성된 콘텐츠를 추가 */
+.wrap::after {
+	content: '';
+	display: block;
+	clear: both; /* float 해제 */
+}
+</style>
+</head>
+<body>
+	<article>
+		<ul>
+			<li>list</li>
+			<li>list</li>
+		</ul>
+		<a href="#">link</a>
+	</article>
+	<hr>
+
+	<!-- Float 를 이용한 블록요소 좌우 배치 -->
+	<div class="wrap">
+		<section class="left"></section>
+		<section class="right"></section>
+	</div>
+
+
+
+</body>
+</html>

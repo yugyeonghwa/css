@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+.wrpper {
+	width: 700px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 100px);
+}
+
+.box {
+	padding: 15px;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+}
+
+.box1 {
+	background-color: lightblue;
+	grid-column: 1/4; /* 가로 1번 ~ 4번 */
+}
+
+.box2 {
+	background-color: lightgreen;
+	grid-row: 2/4; /* 세로 2번 ~ 4번 */
+}
+
+.box3 {
+	background-color: orange;
+	grid-column: 2/4; /* 가로 2번 ~ 4번 */
+}
+
+.box4 {
+	background-color: lightpink;
+	grid-column: 3/4; /* 가로 3번 ~ 4번 */
+}
+</style>
+</head>
+<body>
+	<div class="wrpper">
+		<div class="box box1">box1</div>
+		<div class="box box2">box2</div>
+		<div class="box box3">box3</div>
+		<div class="box box4">box4</div>
+	</div>
+</body>
+</html>

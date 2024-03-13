@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>레이아웃3</title>
+<style type="text/css">
+ul {
+	list-style-type: none;
+	overflow: hidden;
+	margin: 0px;
+	padding: 0px;
+	border-bottom: 1px solid;
+}
+
+li {
+	float: left;
+}
+
+a {
+	text-decoration: none;
+	display: block;
+	padding: 16px 50px;
+}
+
+#box1, #box2, #box3 {
+	clear: both;
+	width: 30%;
+	height: 50%;
+	border: 1px solid black;
+	border-radius: 1.0%;
+	padding: 20px;
+	margin: 20px;
+}
+
+.all {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+</style>
+</head>
+<body>
+	<ul>
+		<li><a href="#">이용 안내</a></li>
+		<li><a href="#">객실 소개</a></li>
+		<li><a href="#">예약 방법 및 요금</a></li>
+		<li><a href="#">예약하기</a></li>
+	</ul>
+
+	<div class="all">
+		<section id="box1">
+			<h1>이용 안내</h1>
+			<p>Excepteur do set eiusmod nulla et veniam. Labore officia
+				officia ex aliqua exercitation aliqua laborum Lorem deserunt ut
+				ullamco labore anim. Offcia eu duis aliquip incididunt. Do laborum
+				et consequat aliqua sint consectetur.</p>
+		</section>
+
+		<section id="box2">
+			<h1>객실 소개</h1>
+			<p>Oui magna culpa minim reprehenderit magna in nisi ipsum. Ad
+				cillum tempor minim fugiat est dolor. Cillum sit qui minim sint
+				officia nostrud cillum cupidatat pariatur ipsum eiusmod velit
+				labore. Sit in non fugiat minim sit.</p>
+		</section>
+
+		<section id="box3">
+			<h1>예약 방법 및 요금</h1>
+			<p>Fugiat aliquip mollit proident velit magna esse ea officia eu.
+				Esse do aliqua proident sulpa eiusmod duis minim deserunt eu
+				reprehenderit ut tempor.</p>
+		</section>
+	</div>
+
+</body>
+</html>
